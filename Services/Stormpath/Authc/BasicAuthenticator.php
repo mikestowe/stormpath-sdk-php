@@ -43,7 +43,7 @@ class Services_Stormpath_Authc_BasicAuthenticator
         $password = $request->getCredentials();
         $password = implode('', $password);
 
-        $value = $username .':' .$password;
+        $value = $username . ':' . $password;
 
         $value = base64_encode($value);
 
